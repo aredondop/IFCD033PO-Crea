@@ -14,6 +14,10 @@ public class Libro {
     public Libro(){    
     }
     
+    public Libro ( String isbn){
+        this.isbn = isbn;
+    }
+    
     public Libro ( String fechaPublicacion, String isbn){
         this.fechaPublicacion = fechaPublicacion;
         this.isbn = isbn;
@@ -25,6 +29,14 @@ public class Libro {
     
     public String getIsbn(){
         return this.isbn;
+    }
+    
+    public void setIsbn( String isbn){
+        this.isbn = isbn;
+    }
+    
+    public void setFechaPublicacion( String fechaPublicacion){
+        this.fechaPublicacion = fechaPublicacion;
     }
     
     public String getInfoLibro(){

@@ -16,7 +16,9 @@ public class Crea {
         System.out.println( "Informacion del Primer Libro");
         System.out.println( primerLibro.getInfoLibro() );
         
-        Libro segundoLibro = new Libro("20 de Abril de 1990", "100-123-123");
+        Libro segundoLibro = new Libro( "100-123-123");
+        
+        segundoLibro.setFechaPublicacion("20 de Abril de 1990");
         System.out.println( "Informacion del Segundo Libro");
         System.out.println( segundoLibro.getInfoLibro() );
     }
